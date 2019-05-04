@@ -1,8 +1,8 @@
 #!/usr/bin/python
-from config import Config
-from validator.signature import Signature
-from validator.pingback import Pingback
-from request.paymentform import PaymentForm
+from .config import Config
+from .validator.signature import Signature
+from .validator.pingback import Pingback
+from .request.paymentform import PaymentForm
 
 
 class Gateway:
