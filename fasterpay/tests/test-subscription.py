@@ -22,4 +22,4 @@ if __name__ == "__main__":
 
     paymentForm = gateway.payment_form().build_form(payload)
 
-    print paymentForm
+    print(paymentForm)

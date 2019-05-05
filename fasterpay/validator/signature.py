@@ -1,5 +1,5 @@
 
-import urllib
+from urllib.parse import urlencode
 import hashlib
 
 class Signature:
@@ -11,5 +11,5 @@ class Signature:
         return [(k, params[k]) for k in sorted(params.keys())]
 
     def calculate_hash(self, params):
-        urlencoded_params = urllib.urlencode(self.ksort(params)) + self.gateway.config.get_private_key()
+        urlencoded_params = urlencode(self.ksort(params)) + self.gateway.config.get_private_key()
         return hashlib.sha256(urlencoded_params.encode()).hexdigest()
