@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='FasterPay Python SDK',
+    name='fasterpay',
     version='0.1.0',
     author='FasterPay Integration Team',
     author_email='integration@paymentwall.com',
